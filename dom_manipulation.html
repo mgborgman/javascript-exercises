@@ -1,0 +1,36 @@
+<html>
+    <body>
+        <h1>
+          THE TITLE OF YOUR WEBPAGE
+        </h1>
+        <div id="container">
+            <div class="content">
+            This is the glorious text-content!
+          </div>
+        </div>
+        <script>
+            console.log('test');
+            var container = document.getElementById('container');
+            var paragraph = document.createElement('p');
+            var h3 = document.createElement('h3');
+            var div = document.createElement('div');
+            var h1 = document.createElement('h1');
+            var paragraph2 = document.createElement('p');
+    
+            paragraph.style.color = 'red';
+            paragraph.textContent = "Hey I'm red!";
+            h3.style.color = 'blue';
+            h3.textContent = "Hey I'm blue!";
+            div.style.border = '1px solid black';
+            div.style.backgroundColor = 'pink';
+            h1.textContent = "I'm in a div";
+            paragraph2.textContent = "ME TOO!";
+            
+            div.appendChild(h1);
+            div.appendChild(paragraph2);
+            container.appendChild(paragraph);
+            container.appendChild(h3);
+            container.appendChild(div);
+        </script>
+      </body>
+</html>
